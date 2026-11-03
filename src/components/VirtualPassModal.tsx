@@ -18,7 +18,7 @@ export const VirtualPassModal: React.FC<VirtualPassModalProps> = ({ pass, onClos
 
   const handleShareWhatsApp = () => {
     const text = encodeURIComponent(
-      `Bonjour David & Sephora ! Je confirme avec grand plaisir ma présence à votre mariage le 19 Juillet 2025. Mon pass virtuel : ${pass.code} - ${pass.fullName} (${pass.guestsCount} personne${pass.guestsCount > 1 ? 's' : ''}).`
+      `Bonjour Daniel & Sephora ! Je confirme avec grand plaisir ma présence à votre mariage le 19 Juillet 2025. Mon pass virtuel : ${pass.code} - ${pass.fullName} (${pass.guestsCount} personne${pass.guestsCount > 1 ? 's' : ''}).`
     );
     window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
   };
@@ -68,7 +68,7 @@ export const VirtualPassModal: React.FC<VirtualPassModalProps> = ({ pass, onClos
               Pass d'Accès à la Réception
             </p>
             <h3 className="text-2xl font-calligraphy text-[#E8DCC6] mt-1">
-              David & Sephora
+              Daniel & Sephora
             </h3>
             <p className="text-xs font-serif text-[#F9F6F0]/90 italic mt-0.5">
               Samedi 28 Novembre 2026 · Espace Jeckad
@@ -80,7 +80,7 @@ export const VirtualPassModal: React.FC<VirtualPassModalProps> = ({ pass, onClos
             {/* Guest Name & Side */}
             <div className="my-3">
               <span className="text-[11px] uppercase tracking-wider text-[#E8DCC6]/70">
-                {pass.side === 'mr' ? "Invité(e) d'Honneur de David" : "Invité(e) d'Honneur de Sephora"}
+                {pass.side === 'mr' ? "Invité(e) d'Honneur de Daniel" : "Invité(e) d'Honneur de Sephora"}
               </span>
               <h4 className="text-xl font-editorial font-bold text-[#F9F6F0] mt-1 tracking-wide">
                 {pass.fullName}

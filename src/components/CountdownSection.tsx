@@ -48,10 +48,10 @@ const targetDate = new Date('2026-11-28T13:00:00Z').getTime();
   const padZero = (n: number) => n.toString().padStart(2, '0');
 
  const handleAddToGoogleCalendar = () => {
-  const title = encodeURIComponent('Mariage David & Sephora');
+  const title = encodeURIComponent('Mariage Daniel & Sephora');
 
   const details = encodeURIComponent(
-    'Célébration du mariage de David & Sephora.\n- 13h00 : Cérémonie Civile à la Mairie de Cocody\n- 14h30 : Bénédiction Nuptiale à la Cathédrale Saint-Paul du Plateau\n- 19h00 : Dîner de Réception à l’Espace Jeckad (Angré 7e Tranche)'
+    'Célébration du mariage de Daniel & Sephora.\n- 13h00 : Cérémonie Civile à la Mairie de Cocody\n- 14h30 : Bénédiction Nuptiale à la Cathédrale Saint-Paul du Plateau\n- 19h00 : Dîner de Réception à l’Espace Jeckad (Angré 7e Tranche)'
   );
 
   const location = encodeURIComponent(
@@ -69,16 +69,16 @@ const targetDate = new Date('2026-11-28T13:00:00Z').getTime();
   const icsContent = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//David and Sephora//Wedding Invitation//FR',
+    'PRODID:-//Daniel and Sephora//Wedding Invitation//FR',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     'BEGIN:VEVENT',
-    'UID:mariage-David-Sephora-2026@wedding.invitation',
+    'UID:mariage-Daniel-Sephora-2026@wedding.invitation',
     'DTSTAMP:20261103T000000Z',
     'DTSTART:20261128T130000Z',
     'DTEND:20261129T020000Z',
-    'SUMMARY:Mariage de David & Sephora',
-    'DESCRIPTION:Célébration du mariage de David & Sephora à Abidjan.\\n- 13h00 : Mairie de Cocody\\n- 14h30 : Cathédrale Saint-Paul\\n- 19h00 : Espace Jeckad',
+    'SUMMARY:Mariage de Daniel & Sephora',
+    'DESCRIPTION:Célébration du mariage de Daniel & Sephora à Abidjan.\\n- 13h00 : Mairie de Cocody\\n- 14h30 : Cathédrale Saint-Paul\\n- 19h00 : Espace Jeckad',
     'LOCATION:Abidjan, Côte d’Ivoire',
     'STATUS:CONFIRMED',
     'END:VEVENT',
@@ -91,7 +91,7 @@ const targetDate = new Date('2026-11-28T13:00:00Z').getTime();
 
   const link = document.createElement('a');
   link.href = window.URL.createObjectURL(blob);
-  link.setAttribute('download', 'mariage-David-Sephora-2026.ics');
+  link.setAttribute('download', 'mariage-Daniel-Sephora-2026.ics');
 
   document.body.appendChild(link);
   link.click();

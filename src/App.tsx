@@ -23,7 +23,7 @@ export default function App() {
   // Load existing saved pass on mount
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('David_Sephora_guest_rsvp');
+      const saved = localStorage.getItem('Daniel_Sephora_guest_rsvp');
       if (saved) {
         const parsed = JSON.parse(saved);
         setActivePass(parsed);
@@ -117,7 +117,7 @@ export default function App() {
             <div className="relative w-full aspect-[453/550] max-h-[580px] overflow-hidden">
               <img
                 src="/assets/hero.jpeg"
-                alt="David et Sephora"
+                alt="Daniel et Sephora"
                 className="w-full h-full object-cover object-top filter contrast-[1.03]"
               />
               {/* Gentle gradient fade from photo into bordeaux canvas */}
@@ -134,7 +134,7 @@ export default function App() {
             {/* Sparkling Diamond Divider */}
             <img
               src="/assets/diamand.png"
-              alt="David et Sephora"
+              alt="Daniel et Sephora"
               className="w-full h-full object-cover object-top filter contrast-[1.03]"
             />
           </section>
@@ -157,7 +157,7 @@ export default function App() {
             {/* Names in Calligraphy Script */}
             <div className="my-8 space-y-1">
               <div className="font-calligraphy text-5xl sm:text-6xl md:text-7xl text-[#F9F6F0] drop-shadow-md tracking-wide">
-                David
+                Daniel
               </div>
               <div className="font-calligraphy text-3xl sm:text-4xl text-[#E8DCC6] my-1">
                 &
@@ -303,7 +303,7 @@ export default function App() {
             <div className="relative w-full max-w-xs mx-auto mt-10 rounded-2xl overflow-hidden shadow-xl border border-[#E8DCC6]/30">
               <img
                 src="/assets/couple.jpeg"
-                alt="David et Sephora complices"
+                alt="Daniel et Sephora complices"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#5E1224] via-transparent to-transparent opacity-60" />
@@ -313,7 +313,7 @@ export default function App() {
           {/* Diamond Divider */}
           <img
             src="/assets/diamand.png"
-            alt="David et Sephora"
+            alt="Daniel et Sephora"
             className="w-full h-full object-cover object-top filter contrast-[1.03]"
           />
 
@@ -415,7 +415,7 @@ export default function App() {
           {/* Footer */}
           <footer className="py-6 px-4 bg-[#24050d] text-center border-t border-[#E8DCC6]/20">
             <p className="text-[11px] text-[#E8DCC6]/60 font-sans">
-              Mariage David & Sephora · 28 Novembre 2026 · Abidjan, Côte d'Ivoire
+              Mariage Daniel & Sephora · 28 Novembre 2026 · Abidjan, Côte d'Ivoire
             </p>
             <p className="text-[10px] text-[#E8DCC6]/40 mt-1">
               Faire-part & Invitation Numérique Officielle

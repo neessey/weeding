@@ -42,7 +42,7 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({ side, onClose, onSuccess }
 
     // Store in localStorage
     try {
-      localStorage.setItem('David_Sephora_guest_rsvp', JSON.stringify(newRsvp));
+      localStorage.setItem('Daniel_Sephora_guest_rsvp', JSON.stringify(newRsvp));
     } catch {
       // ignore storage failure
     }
@@ -66,7 +66,7 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({ side, onClose, onSuccess }
               Confirmation de Présence
             </span>
             <h3 className="text-lg font-editorial font-bold text-[#E8DCC6] tracking-wide mt-0.5">
-              {side === 'mr' ? 'Invités de M. David' : 'Invités de Mme Sephora'}
+              {side === 'mr' ? 'Invités de M. Daniel' : 'Invités de Mme Sephora'}
             </h3>
           </div>
           <button
@@ -155,7 +155,7 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({ side, onClose, onSuccess }
           {/* Sweet note / wishes */}
           <div>
             <label className="block text-xs font-medium text-[#E8DCC6] mb-1">
-              Mot doux ou vœux pour David & Sephora (Optionnel)
+              Mot doux ou vœux pour Daniel & Sephora (Optionnel)
             </label>
             <div className="relative">
               <MessageSquare className="absolute left-3 top-2.5 w-4 h-4 text-[#E8DCC6]/50" />
