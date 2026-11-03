@@ -1,0 +1,6 @@
+{
+  "name": "Mariage David & Sephora - Faire-part Virtuel",
+  "description": "Faire-part et invitation de mariage virtuelle de David & Sephora - Samedi 19 Juillet 2025 à Abidjan. Programme officiel, localisation GPS, compte à rebours, dress code et confirmation de présence RSVP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

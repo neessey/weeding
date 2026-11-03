@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+:root {
+  --bordeaux: #5E1224;
+  --bordeaux-dark: #3a0814;
+  --bordeaux-deep: #24050d;
+  --bordeaux-light: #7d1b32;
+  --orange: #D3542A;
+  --orange-light: #e5673e;
+  --orange-soft: rgba(211, 84, 42, 0.15);
+  --beige: #E8DCC6;
+  --beige-light: #F5EFE4;
+  --beige-dark: #cfbc9e;
+  --blanc-casse: #F9F6F0;
+}
+
+@theme {
+  --color-bordeaux: var(--bordeaux);
+  --color-bordeaux-dark: var(--bordeaux-dark);
+  --color-bordeaux-deep: var(--bordeaux-deep);
+  --color-bordeaux-light: var(--bordeaux-light);
+  --color-orange-theme: var(--orange);
+  --color-orange-light: var(--orange-light);
+  --color-beige: var(--beige);
+  --color-beige-light: var(--beige-light);
+  --color-beige-dark: var(--beige-dark);
+  --color-blanc-casse: var(--blanc-casse);
+  --font-cursive: "Alex Brush", "Pinyon Script", cursive;
+  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+/* Custom Calligraphy & Luxury Utilities */
+.font-calligraphy {
+  font-family: "Alex Brush", "Pinyon Script", cursive;
+}
+
+.font-editorial {
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+}
+
+.font-garamond {
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* Metallic Bevel Button Effect from the original invitation */
+.metallic-btn {
+  background: linear-gradient(135deg, #ffffff 0%, #F5EFE4 20%, #E8DCC6 50%, #C8B598 80%, #ffffff 100%);
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.25),
+    inset 0 1px 2px rgba(255, 255, 255, 0.9),
+    inset 0 -2px 3px rgba(94, 18, 36, 0.15);
+  border: 1px solid rgba(232, 220, 198, 0.9);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.metallic-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 
+    0 8px 25px rgba(211, 84, 42, 0.3),
+    0 2px 10px rgba(94, 18, 36, 0.2),
+    inset 0 1px 3px rgba(255, 255, 255, 1);
+  border-color: #D3542A;
+}
+
+.metallic-btn:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+/* Luxury Card Shadow & Glow */
+.bordeaux-card-shadow {
+  box-shadow: 
+    0 15px 35px -5px rgba(36, 5, 13, 0.7),
+    0 0 0 1px rgba(232, 220, 198, 0.15);
+}
+
+.light-card-shadow {
+  box-shadow: 
+    0 15px 35px -5px rgba(94, 18, 36, 0.12),
+    0 0 0 1px rgba(232, 220, 198, 0.4);
+}
+
+/* Keyframes for Smooth Transitions & Animations */
+@keyframes sparkle {
+  0%, 100% { opacity: 0.25; transform: scale(0.8) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1.25) rotate(180deg); filter: drop-shadow(0 0 8px #E8DCC6); }
+}
+
+@keyframes arrowBounceLeft {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-6px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(211, 84, 42, 0.45); }
+  50% { box-shadow: 0 0 0 14px rgba(211, 84, 42, 0); }
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes shimmerWave {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-sparkle-1 {
+  animation: sparkle 3s ease-in-out infinite;
+}
+
+.animate-sparkle-2 {
+  animation: sparkle 4s ease-in-out infinite 1.5s;
+}
+
+.animate-sparkle-3 {
+  animation: sparkle 3.5s ease-in-out infinite 0.7s;
+}
+
+.animate-arrow-bounce {
+  animation: arrowBounceLeft 1.4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite;
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+/* Smooth section scroll reveal classes */
+.section-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.section-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Shimmering Bokeh Background for light sections (Cérémonie Civile & Compte à rebours) */
+.bokeh-light-bg {
+  background-color: #F9F6F0;
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(232, 220, 198, 0.8) 0%, transparent 40%),
+    radial-gradient(circle at 85% 30%, rgba(255, 255, 255, 0.95) 0%, transparent 35%),
+    radial-gradient(circle at 50% 60%, rgba(232, 220, 198, 0.5) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(211, 84, 42, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 80% 85%, rgba(232, 220, 198, 0.7) 0%, transparent 45%);
+}
+
+/* Subtle Shimmer for Dark Bordeaux Sections */
+.bordeaux-luxury-bg {
+  background-color: #5E1224;
+  background-image: 
+    radial-gradient(circle at 20% 25%, rgba(211, 84, 42, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 80% 75%, rgba(232, 220, 198, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(36, 5, 13, 0.5) 0%, transparent 70%);
+}
