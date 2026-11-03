@@ -181,10 +181,10 @@ export default function App() {
           {/* ================= SECTION 3: DATE BLOCK ================= */}
           <section className="relative bg-[#3a0814] border-y border-[#E8DCC6]/40 py-6 px-4">
             <div className="grid grid-cols-3 items-center text-center max-w-md mx-auto divide-x divide-[#E8DCC6]/40">
-              {/* Left Column: VENDREDI */}
+              {/* Left Column: SAMEDI */}
               <div className="px-2">
                 <span className="text-sm sm:text-base font-sans font-bold tracking-widest text-[#F9F6F0]">
-                  VENDREDI
+                  SAMEDI
                 </span>
               </div>
 
