@@ -127,7 +127,7 @@ export default function App() {
             {/* Monogram "ds" in script calligraphy */}
             <div className="relative text-center -mt-8 mb-2 z-10">
               <span className="font-calligraphy text-5xl sm:text-6xl text-[#E8DCC6] tracking-wider select-none inline-block drop-shadow-md">
-                ds
+                DS
               </span>
             </div>
 
