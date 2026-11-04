@@ -116,7 +116,7 @@ export default function App() {
             {/* Hero Couple Photo */}
             <div className="relative w-full aspect-[453/550] max-h-[580px] overflow-hidden">
               <img
-                src="/assets/hero.jpeg"
+                src="/assets/hero.jpg"
                 alt="Daniel et Sephora"
                 className="w-full h-full object-cover object-top filter contrast-[1.03]"
               />
