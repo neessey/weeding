@@ -287,7 +287,7 @@ export default function App() {
 
   {/* Localisation Button */}
   <button
-    onClick={() => setSelectedVenue(venues.nuptiale)}
+    onClick={() => window.open(venues.nuptiale.directionsUrl, '_blank', 'noopener,noreferrer')}
     className="metallic-btn w-full max-w-[220px] px-8 py-3 rounded-full text-sm font-sans font-bold tracking-wider text-[#5E1224] uppercase shadow-lg cursor-pointer"
   >
     LOCALISATION
