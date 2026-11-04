@@ -302,7 +302,7 @@ export default function App() {
             {/* Smiling Couple Photo */}
             <div className="relative w-full max-w-xs mx-auto mt-10 rounded-2xl overflow-hidden shadow-xl border border-[#E8DCC6]/30">
               <img
-                src="/assets/couple.png"
+                src="/assets/couple2.png"
                 alt="Daniel et Sephora complices"
                 className="w-full h-auto object-cover"
               />
