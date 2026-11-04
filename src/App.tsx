@@ -247,7 +247,7 @@ export default function App() {
 
             {/* Subtext instruction */}
             <p className="text-[11px] sm:text-xs text-[#5E1224]/80 max-w-xs mx-auto leading-relaxed mt-2 font-sans">
-              Cliquez sur le bouton (puis sur itinéraire sur la page qui s'affiche pour suivre l'indication du lieu sur Google maps).
+Cliquez sur le bouton pour ouvrir le lieu sur Google maps et suivre l'itinéraire.
             </p>
           </section>
 
@@ -296,7 +296,7 @@ export default function App() {
 
             {/* Subtext instruction */}
             <p className="text-[11px] sm:text-xs text-[#E8DCC6]/80 max-w-xs mx-auto leading-relaxed mt-2 font-sans">
-              Cliquez sur le bouton (puis sur itinéraire sur la page qui s'affiche pour suivre l'indication du lieu sur Google maps).
+              Cliquez sur le bouton pour ouvrir le lieu sur Google maps et suivre l'itinéraire.
             </p>
 
             {/* Smiling Couple Photo */}
