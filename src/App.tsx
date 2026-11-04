@@ -146,33 +146,33 @@ export default function App() {
 
             {/* Scripture Verse */}
             <div className="my-8 px-4 max-w-sm mx-auto">
-              <p className="text-xs sm:text-sm font-serif font-semibold text-[#E8DCC6] tracking-wide">
+              <p className="text-sm sm:text-base font-serif font-semibold text-[#E8DCC6] tracking-wide">
                 Cantique des cantiques 8:7
               </p>
-              <blockquote className="text-xs sm:text-sm font-serif text-[#F9F6F0]/95 italic leading-relaxed mt-1">
+              <blockquote className="text-sm sm:text-base font-serif text-[#F9F6F0]/95 italic leading-relaxed mt-1">
                 « Les grandes eaux ne sauraient éteindre l'amour, et les fleuves ne le submergeraient pas. »
               </blockquote>
             </div>
 
             {/* Names in Calligraphy Script */}
             <div className="my-8 space-y-1">
-              <div className="font-calligraphy text-5xl sm:text-6xl md:text-7xl text-[#F9F6F0] drop-shadow-md tracking-wide">
+              <div className="font-calligraphy text-6xl sm:text-7xl md:text-8xl text-[#F9F6F0] drop-shadow-md tracking-wide">
                 Daniel
               </div>
-              <div className="font-calligraphy text-3xl sm:text-4xl text-[#E8DCC6] my-1">
+              <div className="font-calligraphy text-4xl sm:text-5xl text-[#E8DCC6] my-1">
                 &
               </div>
-              <div className="font-calligraphy text-5xl sm:text-6xl md:text-7xl text-[#F9F6F0] drop-shadow-md tracking-wide">
+              <div className="font-calligraphy text-6xl sm:text-7xl md:text-8xl text-[#F9F6F0] drop-shadow-md tracking-wide">
                 Sephora
               </div>
             </div>
 
             {/* Family Invitation Text */}
             <div className="mt-8 mb-6 space-y-2">
-              <p className="text-xs sm:text-sm uppercase tracking-[0.2em] font-sans font-medium text-[#E8DCC6]">
+              <p className="text-sm sm:text-base uppercase tracking-[0.2em] font-sans font-medium text-[#E8DCC6]">
                 AVEC LEURS FAMILLES
               </p>
-              <p className="text-xs sm:text-sm font-serif text-[#F9F6F0]/90 leading-relaxed max-w-xs mx-auto">
+              <p className="text-sm sm:text-base font-serif text-[#F9F6F0]/90 leading-relaxed max-w-xs mx-auto">
                 ont l'immense joie de vous convier à la célébration de leur mariage.
               </p>
             </div>
