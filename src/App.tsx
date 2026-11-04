@@ -58,7 +58,7 @@ export default function App() {
       location: 'Abidjan - Bonoumin',
       address: "Église Évangélique de Réveil Internationale, Bonoumin, Abidjan, Côte d'Ivoire",
       mapsQuery: 'Église Évangélique de Réveil Internationale, Bonoumin, Abidjan',
-      directionsUrl: 'https://www.google.com/maps/place/%C3%89glise+%C3%89vang%C3%A9lique+de+R%C3%A9veil+Internationale+-+2+Plateaux/@5.3709432,-4.0048748,17z/data=!3m1!4b1!4m25!1m18!1m14!4m13!1m4!2m2!1d-3.9780352!2d5.4001664!4e1!1m6!1m2!1s0xfc1ebfa2dd25319:0x92a8fbab2dcf732b!2sMairie+de+Cocody,+Abidjan!2m2!1d-4.0033643!2d5.3329666!3e0!2m2!3m1!5e2!3m5!1s0xfc1eb00641e0ac5:0x5bfc3bd9005ebb74!8m2!3d5.3709432!4d-4.0000039!16s%2Fg%2F11ldlwscsv?hl=fr&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D',
+      directionsUrl: 'https://maps.app.goo.gl/LBg7H4V98FUb9dnT7?g_st=aw',
       details: "Arrivée recommandée des invités à partir de 13h00 pour la célébration du mariage religieux.",
     },
   };
